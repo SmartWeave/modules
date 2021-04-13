@@ -12,7 +12,7 @@ yarn add @smartweave/modules
 In your project, create an `index.ts`. The modules allows you to write 
 SmartWeave Contracts in Typescript. Use can use this skeleton to get started:
 ```typescript
-import {ActionInterface, StateInterface} from "@smartweave/modules/faces";
+import {ActionInterface, StateInterface} from "@smartweave/modules/dist/faces";
 
 declare const SmartWeave: any;
 
@@ -27,8 +27,8 @@ export async function handle(state: StateInterface, action: ActionInterface) {
 ### Using a module
 To use a module, simply import it and register it in `handle`:
 ```typescript
-import {ActionInterface, StateInterface} from "@smartweave/modules/faces";
-import {Transfer} from "@smartweave/modules/token/transfer";
+import {ActionInterface, StateInterface} from "@smartweave/modules/dist/faces";
+import {Transfer} from "@smartweave/modules/token/dist/transfer";
 
 export async function handle(state: StateInterface, action: ActionInterface) {
   switch (action.input.function) {
