@@ -9,8 +9,8 @@ yarn add @smartweave/modules
 ```
 ## Usage
 ### Setting up the contract
-In your project, create an `index.ts`. The modules allows you to write 
-SmartWeave Contracts in Typescript. Use can use this skeleton to get started:
+In your project, create an `index.ts`. The modules allow you to write 
+SmartWeave Contracts in Typescript. You can use this skeleton to get started:
 ```typescript
 import {ActionInterface, StateInterface} from "@smartweave/modules/dist/faces";
 
