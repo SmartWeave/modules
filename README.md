@@ -40,6 +40,10 @@ export async function handle(state: StateInterface, action: ActionInterface) {
 }
 ```
 ### Building the contract
+Install esbuild:
+```
+yarn add --dev esbuild
+```
 Building the contract requires an extra script. Create a `build.js` script:
 ```javascript
 const { build } = require("esbuild");
