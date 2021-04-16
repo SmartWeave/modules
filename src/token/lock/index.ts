@@ -25,5 +25,5 @@ export const Lock = (state: StateInterface, action: ActionInterface) => {
     state.vault[caller] = qty;
   }
 
-  return {...state, balances, pools};
+  return {...state};
 };
